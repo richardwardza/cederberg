@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Link = styled.a`
-  color: #ffffff;  
+  color: #ffffff;
 `;
 
 export const Intro = () => {
@@ -10,7 +10,11 @@ export const Intro = () => {
       <h2>HELP PREVENT ORE MINING IN THE CEDERBERG</h2>
 
       <p>
-        ( <Link href="https://drive.google.com/drive/folders/1-5qtAGcDcZlVuPav0q0kQFUOQMIMpEbP" target="_blank">origionally from here</Link> )
+        ({" "}
+        <Link href="https://drive.google.com/drive/folders/1-5qtAGcDcZlVuPav0q0kQFUOQMIMpEbP" target="_blank">
+          origionally from here
+        </Link>{" "}
+        )
       </p>
       <p>
         Registering as an Interested and Affected Party (IAP) and sending comments regarding the application by Orren
@@ -20,8 +24,7 @@ export const Intro = () => {
       <p>
         Background: Earlier this month (April), TPR Mining Resources (Pty) Ltd posted a public notice on behalf of Orren
         Capital (Pty) Ltd communicating their intention to prospect for iron and manganese near the Twee River in the
-        heart of the Cederberg. The map below shows the location of the proposed prospecting activities (-32.67727778°,
-        19.29186111°) relative to nearby accommodations and the town of Citrusdal.
+        heart of the Cederberg, a few kilometers from Suikerbossie Guest Farm.
       </p>
 
       <p>
@@ -30,10 +33,10 @@ export const Intro = () => {
       </p>
 
       <p>
-        Why register? As part of an environmental impact assessment, the party running the EIA is required to consider
-        comments and concerns from the public. The more registered IAPs, the more it becomes evident that the public
-        does not want this to happen. If you include your contact details when you register as an IAP, you will receive
-        project updates.
+        Why register? The environmental assessment practitioner (TPR in this case) is required to consider comments and
+        concerns from the public. The more registered IAPs, the more it becomes evident that the public does not want
+        this to happen. If you include your contact details when you register as an IAP, you will receive project
+        updates.
       </p>
 
       <h2>What Next?</h2>

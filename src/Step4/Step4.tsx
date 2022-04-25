@@ -49,7 +49,7 @@ export const Step4 = ({ details, comments, goBack }: Step4Props) => {
     window.scrollTo(0, 0);
   }, []);
   
-  const emailLink = `mailto:info@tprmining-resources.co.za,pheladi@tprmining-resources.co.za?subject=Request%20to%20register%20as%20an%20Interested%20and%20Affected%20Party%20%26%20BAR%20comment%20submission%20(Prospecting%20application%20WC%2030%2F5%2F1%2F1%2F3%2F2%2F103%20PR)&body=Dear%20Mr.%20Thato%20Ramoraswi%2C%0D%0A%0D%0AI%20would%20like%20to%20register%20as%20an%20Interested%20and%20Affected%20Party%20with%20regards%20to%20the%20application%20to%20prospect%20for%20iron%20and%20manganese%20on%20Farm%20Pompies%20Hoek%2063%20in%20the%20Witzenberg%20Local%20Municipality%20(prospecting%20right%20application%20WC%2030%2F5%2F1%2F1%2F2%2F10376%20PR).%0D%0A%0D%0AI%20would%20also%20like%20to%20submit%20comments%20regarding%20the%20BAR.%20My%20contact%20details%20and%20comments%20are%20in%20the%20attached%20document.%0D%0A%0D%0APlease%20can%20you%20acknowledge%20receipt%20of%20this%20email%2C%20confirm%20my%20registration%20as%20an%20IAP%20and%20confirm%20that%20my%20comments%20will%20be%20recorded%20in%20the%20Issues%20and%20Response%20report%3F%20I%20have%20cc%E2%80%99d%20Ms%20Marijke%20Honig%20for%20her%20records.%0D%0A%0D%0AThank%20you.%0D%0A%0D%0A${details.firstName} ${details.surname}`;
+  const emailLink = `mailto:info@tprmining-resources.co.za,pheladi@tprmining-resources.co.za?subject=Request%20to%20register%20as%20an%20Interested%20and%20Affected%20Party%20%26%20BAR%20comment%20submission%20(Prospecting%20application%20WC%2030%2F5%2F1%2F1%2F3%2F2%2F103%20PR)&body=Dear%20Mr.%20Thato%20Ramoraswi%2C%0D%0A%0D%0AI%20would%20like%20to%20register%20as%20an%20Interested%20and%20Affected%20Party%20with%20regards%20to%20the%20application%20to%20prospect%20for%20iron%20and%20manganese%20on%20Farm%20Pompies%20Hoek%2063%20in%20the%20Witzenberg%20Local%20Municipality%20(prospecting%20right%20application%20WC%2030%2F5%2F1%2F1%2F2%2F10376%20PR).%0D%0A%0D%0AI%20would%20also%20like%20to%20submit%20comments%20regarding%20the%20BAR.%20My%20contact%20details%20and%20comments%20are%20in%20the%20attached%20document.%0D%0A%0D%0APlease%20can%20you%20acknowledge%20receipt%20of%20this%20email%2C%20confirm%20my%20registration%20as%20an%20IAP%20and%20confirm%20that%20my%20comments%20will%20be%20recorded%20in%20the%20Issues%20and%20Response%20report%3F%20%0D%0A%0D%0AThank%20you.%0D%0A%0D%0A${details.firstName} ${details.surname}`;
 
   return (
     <div>
@@ -90,7 +90,7 @@ export const Step4 = ({ details, comments, goBack }: Step4Props) => {
           (prospecting right application WC 30/5/1/1/2/10376 PR). I would also like to submit comments regarding the
           BAR. My contact details and comments are in the attached document. Please can you acknowledge receipt of this
           email, confirm my registration as an IAP and confirm that my comments will be recorded in the Issues and
-          Response report? I have cc’d Ms Marijke Honig for her records. Thank you.
+          Response report? Thank you.
         </Textarea>
       </Paragraph>
       <Button onClick={goBack}>{`<< Back`}</Button>

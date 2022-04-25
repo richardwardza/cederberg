@@ -57,35 +57,38 @@ export const CommentSection = ({ onSubmit, restartProcess }: CommentProps) => {
               };
 
               return (
-                <Form>
+                <div>
                   <Button onClick={reRandom} style={{ marginBottom: "10px" }}>{`randomise`}</Button>
-                  <Paragraph style={{maxWidth: "100%"}}>
-                    The 7th section has space for you: Use this space to detail how you use the Cederberg - hiking,
-                    swimming, fishing, camping, climbing, biking, etc. Mention how your use of the Cederberg would
-                    change if it were to be impacted by mining activities to drive home the potential economic impacts.
-                  </Paragraph>
-                  <Input rows={7} component="textarea" name="comment1" />
-                  <Input rows={7} component="textarea" name="comment2" />
-                  <Input rows={7} component="textarea" name="comment3" />
-                  <Input rows={7} component="textarea" name="comment4" />
-                  <Input rows={7} component="textarea" name="comment5" />
-                  <Input rows={7} component="textarea" name="comment6" />
-                  <Input
-                    rows={7}
-                    component="textarea"
-                    name="userComment"
-                    placeholder="Use this space to detail how you use the Cederberg - hiking, swimming, fishing, camping, climbing, biking, etc. Mention how your use of the Cederberg would change if it were to be impacted by mining activities to drive home the potential economic impacts. An example is: 
+                  <Form>
+                    <Paragraph style={{ maxWidth: "100%" }}>
+                      The 7th section has space for you: Use this space to detail how you use the Cederberg - hiking,
+                      swimming, fishing, camping, climbing, biking, etc. Mention how your use of the Cederberg would
+                      change if it were to be impacted by mining activities to drive home the potential economic
+                      impacts.
+                    </Paragraph>
+                    <Input rows={7} component="textarea" name="comment1" />
+                    <Input rows={7} component="textarea" name="comment2" />
+                    <Input rows={7} component="textarea" name="comment3" />
+                    <Input rows={7} component="textarea" name="comment4" />
+                    <Input rows={7} component="textarea" name="comment5" />
+                    <Input rows={7} component="textarea" name="comment6" />
+                    <Input
+                      rows={7}
+                      component="textarea"
+                      name="userComment"
+                      placeholder="Use this space to detail how you use the Cederberg - hiking, swimming, fishing, camping, climbing, biking, etc. Mention how your use of the Cederberg would change if it were to be impacted by mining activities to drive home the potential economic impacts. An example is: 
  
                     As both an outdoor enthusiast and aquatic scientist, I make frequent trips (> 15 trips / year) to the Cederberg for the purposes of hiking, climbing, camping, swimming, and research. I visit the Cederberg for its natural beauty and pristine wilderness areas. I would avoid visiting the area were it to be degraded by mining activities. The economic implications of such decisions by other visitors to the Cederberg are significant, especially by the avid fly-fishing community.
                     "
-                  />
-                  <Input rows={7} component="textarea" name="comment7" />
-                  <Button onClick={restartProcess}>{`<< Back`}</Button>
+                    />
+                    <Input rows={7} component="textarea" name="comment7" />
+                    <Button onClick={restartProcess}>{`<< Back`}</Button>
 
-                  <Button type="submit" disabled={isSubmitting}>
-                    {`Next >>`}
-                  </Button>
-                </Form>
+                    <Button type="submit" disabled={isSubmitting}>
+                      {`Next >>`}
+                    </Button>
+                  </Form>
+                </div>
               );
             }}
           </Formik>
