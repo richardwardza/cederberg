@@ -1,8 +1,17 @@
+import styled from "styled-components";
+
+const Link = styled.a`
+  color: #ffffff;  
+`;
+
 export const Intro = () => {
   return (
     <div>
       <h2>HELP PREVENT ORE MINING IN THE CEDERBERG</h2>
 
+      <p>
+        ( <Link href="https://drive.google.com/drive/folders/1-5qtAGcDcZlVuPav0q0kQFUOQMIMpEbP" target="_blank">origionally from here</Link> )
+      </p>
       <p>
         Registering as an Interested and Affected Party (IAP) and sending comments regarding the application by Orren
         Capital (Pty) Ltd and TPR Mining Resources (Pty) Ltd to undertake prospecting activities in the Cederberg
@@ -29,8 +38,10 @@ export const Intro = () => {
 
       <h2>What Next?</h2>
       <p>
-        Please be aware that this entire process is client side.<br />        
-        None of your data leaves the browser - it does get used to generate the PDF (also in the browser).<br/>
+        Please be aware that this entire process is client side.
+        <br />
+        None of your data leaves the browser - it does get used to generate the PDF (also in the browser).
+        <br />
         That said, the process has 4 steps:
         <ol>
           <li>This introduction</li>

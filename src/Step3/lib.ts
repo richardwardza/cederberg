@@ -2,10 +2,10 @@ import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 import { FormInput } from "../UserForm/lib";
 import { part1, part2, part3, part4, part5, part6, part7 } from "./comments";
 
-const URL = "localhost:3000";
+const URL = "cederberg.wildwomen.co.za";
 
 export const modifyPdf = async (details: FormInput | undefined, comments: Comments) => {
-  const url = `http://${URL}/IAPCommentandRegistrationSheet.pdf`;
+  const url = `https://${URL}/IAPCommentandRegistrationSheet.pdf`;
   const existingPdfBytes = await fetch(url).then((res) => res.arrayBuffer());
 
   const pdfDoc = await PDFDocument.load(existingPdfBytes);
@@ -118,7 +118,7 @@ export const modifyPdf = async (details: FormInput | undefined, comments: Commen
 
 
   const pdfBytes = await pdfDoc.save();
-  downloadBlob(pdfBytes, "some-file.pdf", "application/pdf");
+  downloadBlob(pdfBytes, "IAPCommentandRegistrationSheet.pdf", "application/pdf");
 };
 
 export const downloadURL = function (data: string, fileName: string) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FormInput } from "../UserForm/lib";
 import { Paragraph } from "../Step2/Step2";
 import { Comments } from "./lib";
@@ -11,6 +11,10 @@ interface CreateProps {
 }
 
 export const Step3 = ({ details, restartProcess, saveComments }: CreateProps) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div>
       <Paragraph>Here we populate the comments section from a set of predefined comments.</Paragraph>

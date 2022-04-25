@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FormInput } from "../UserForm/lib";
 import { UserForm } from "../UserForm/UserForm";
 import styled from "styled-components";
@@ -14,6 +14,9 @@ export const Paragraph = styled.p`
 `;
 
 export const Step2 = ({ onSubmit, details, restartProcess }: Step1Props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Paragraph>Fill it out form below.</Paragraph>
@@ -22,7 +25,8 @@ export const Step2 = ({ onSubmit, details, restartProcess }: Step1Props) => {
         are comfortable sharing. If you share your email, you will receive project updates (in theory).
       </Paragraph>
       <Paragraph>
-        * required<br/>
+        * required
+        <br />
         ** one of these are required
       </Paragraph>
       <UserForm onSubmit={onSubmit} details={details} restartProcess={restartProcess} />
